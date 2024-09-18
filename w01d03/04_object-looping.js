@@ -12,4 +12,3 @@ const dog = {
 for (const key in dog) {
   console.log('value', dog[key]);
 }
-
