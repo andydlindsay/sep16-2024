@@ -8,4 +8,4 @@ process.stdin.setEncoding('utf-8');
 // whenever someone types something in and presses enter
 process.stdin.on('data', (data) => {
   console.log('you typed:', data.trim());
-})
+});
