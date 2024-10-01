@@ -69,7 +69,6 @@ app.post('/pets/:petId/delete', (req, res) => {
 });
 
 // UPDATE
-
 // serve up the edit form
 app.get('/pets/:petId', (req, res) => {
   // grab the petId from the url parameter
