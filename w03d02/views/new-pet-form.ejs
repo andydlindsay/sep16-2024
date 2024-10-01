@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Pet</title>
+</head>
+<body>
+  <h1>Create a new pet below!</h1>
+
+  <a href="/pets">Go back home</a>
+
+  <form method="POST" action="/pets">
+    <label>Name</label>
+    <input name="name" />
+    <br/>
+    <label>Type</label>
+    <input name="type" />
+    <br/>
+    <label>Age</label>
+    <input name="age" />
+    <br/>
+    <label>Breed</label>
+    <input name="breed" />
+    <br/>
+    <button type="submit">Create!</button>
+  </form>
+</body>
+</html>

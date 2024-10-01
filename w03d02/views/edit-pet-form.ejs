@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Your Pet</title>
+</head>
+<body>
+  <h1>Edit a pet below!</h1>
+
+  <a href="/pets">Go back home</a>
+
+  <form method="POST" action="/pets/<%= petId %>/edit">
+    <label>Name</label>
+    <input name="name" value="<%= pet.name %>" />
+    <br/>
+    <label>Type</label>
+    <input name="type" value="<%= pet.type %>"/>
+    <br/>
+    <label>Age</label>
+    <input name="age" value="<%= pet.age %>"/>
+    <br/>
+    <label>Breed</label>
+    <input name="breed" value="<%= pet.breed %>"/>
+    <br/>
+    <button type="submit">Edit!</button>
+  </form>
+</body>
+</html>
