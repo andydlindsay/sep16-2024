@@ -5,3 +5,4 @@
 * [W02D02 - Asynchronous Control Flow](/w02d02/)
 * [W02D03 - Networking with TCP and HTTP](/w02d03/)
 * [W03D02 - CRUD with Express](/w03d02/)
+* [W03D03 - HTTP Cookies & User Authentication](/w03d03/)
