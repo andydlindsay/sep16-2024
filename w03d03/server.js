@@ -18,6 +18,7 @@ const users = {
   },
 };
 
+// configuration
 app.set('view engine', 'ejs');
 
 // middleware
@@ -151,7 +152,6 @@ app.post('/register', (req, res) => {
 
   res.redirect('/protected');
 });
-
 
 app.listen(port, () => {
   console.log(`app is listening on port ${port}`);
