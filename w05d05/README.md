@@ -4,65 +4,48 @@
 * teamwork
 * reinforce everything you've learned
 
-### pick a project
+### User Stories
+- A _user story_ describes how users will interact with your application
+- They have the form: As a ______, I want to ______, because ______.
+- eg. As a _user_, I want to _be able to save posts_, because _I want to review them later_.
+- User stories can also be negated: As a _____, I shouldn't be able to ______, because _____.
+- eg. As a _user_, I shouldn't be able to _edit other users posts_, because _I don't own those posts_.
 
-### user stories
-* describes how a user interacts with our app
-* As a ______, I can _____, because _____
+### ERD
+- The user stories provide you with nouns (eg. user, posts, favourites)
+- Use these nouns/entities to build out your database (ie. tables are the nouns from the stories)
 
-As a logged in user, I can create a quiz, because I want to annoy my friends
-As a logged in user, I can put pins on a map, because I want to share info with others
+### Routes
+- Once you know the resources that you'll have, write out the routes that you'll need to perform BREAD operations on those resources
+- Remember RESTful conventions (they make it much easier)
 
-/planning/user-stories.md
+### MVP vs MVD
+- There is a concept in development of an MVP, the Minimum Viable Product
+- An MVP has just enough features to be useful to a user
+- This concept helps streamline the development process and help keep the team on target
+- For mid-terms, we want to focus on the MVD, the Minimum Viable Demo
+- **If you aren't going to demo it, don't build it**
 
-### identifying nouns
-* nouns are tables
-* ERD
-
-planning/erd.png
-planning/erd-stretch.png
-
-### routes
-* RESTful routing
-
-Browse  GET   /fooditems
-Read    GET   /fooditems/:id
-Edit    POST  /fooditems/:id
-Add     POST  /fooditems
-Delete  POST  /fooditems/:id/delete
-
-planning/routes.md
-
-### MVP
-* Minimum Viable Product
-* KV Minimum Viable Demo (MVD)
-* focus on the minimum feature set that you can demo in 5 mins
-* if you're not gonna show it, don't build it
-
-### Wireframes/Mockups
-* lowest fidelity possible
-
-planning/wireframe.png
-
-
-public/styles/styles.css
-
-1. styles/login.scss
-2. <Link href="login.css" />
-3. automatically compiled => public/styles/login.css
-4. express static will serve up the file
+### Wireframes
+- Draw out the structure of your web pages
+- This will make it much easier to build out these pages later
+- This is also a great opportunity to get input from all of the team members
+- Design matters... however you are a developer, not a designer
+- Get inspiration from websites you visit
 
 ### User Login
-* don't do it
+- Don't do it
+- Seriously, don't do it
+- We know that you know how to register and login users
 
 ```js
-// localhost:8000/login/5
+// do this instead
 app.get('/login/:id', (req, res) => {
-  // plaintext
-  res.cookie('userId', req.params.id);
+  // using encrypted cookies
+  req.session.user_id = req.params.id;
 
-  // encrypted
-  req.session.userId = req.params.id;
+  // or using plain-text cookies
+  res.cookie('user_id', req.params.id);
 
   // send the user somewhere
   res.redirect('/');
@@ -70,15 +53,22 @@ app.get('/login/:id', (req, res) => {
 ```
 
 ### Tech Choices
-* Backend: Node, Express, Postgres
-* Frontend: HTML, CSS, JS, jQuery, bootstrap, tailwind
+- We have made all the tech choices for you
+- Back End: Node and Express
+- Front End: HTML, CSS, JS, jQuery, Bootstrap
 
-### SPA vs MPA
-* they're not mutually exclusive
+### The Mid-term Skeleton
+- Use the provided `node-skeleton` as a template for your project
+- This will get you up and running quickly
+
+### SPA vs Multi-page App
+- These concepts are not mutually exclusive
+- You can choose one or the other or both
+
+### Git
+- Use Git best practices (ask a mentor for clarification if you need it)
+- Use branches
 
 ### Communication
-* midterm scrum
-
-
-
-
+- Make sure to communicate with your team members
+- Use Slack, iMessage, Google Hangouts, whatever... just make sure that everyone is on the same page
