@@ -35,4 +35,4 @@ useDocumentTitle('My New Title');
 ### Useful Links
 - [React Docs: Custom Hooks](https://reactjs.org/docs/hooks-custom.html)
 - [Easy to Understand Hook Recipes](https://usehooks.com/)
-- [![awesome](https://camo.githubusercontent.com/1997c7e760b163a61aba3a2c98f21be8c524be29/68747470733a2f2f617765736f6d652e72652f62616467652e737667) React Hooks Resource](https://github.com/rehooks/awesome-react-hooks)
+- [![awesome](https://camo.githubusercontent.com/3418ba3754faddfb88c5cbdc94c31ad670fc693c8caa59bc2806c9836acc04e4/68747470733a2f2f617765736f6d652e72652f62616467652e737667) React Hooks Resource](https://github.com/rehooks/awesome-react-hooks)
