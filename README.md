@@ -12,3 +12,4 @@
 * [W07D02 - What is React State?](/w07d02/)
 * [W07D05 - Custom Hooks](/w07d05/)
 * [W08D02 - Class-based Components](/w08d02/)
+* [W08D03 - Unit & Integration Testing](/w08d03/)
