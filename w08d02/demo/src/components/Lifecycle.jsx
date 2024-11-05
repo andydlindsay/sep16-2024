@@ -24,8 +24,7 @@ class Lifecycle extends React.Component {
     this.setState({ intervalId });
   }
 
-  // fire every time state or props change
-  // listen for a particular value to change
+  // fires every time state or props change; listen for a particular value to change
   // useEffect(() => {}, [age])
   componentDidUpdate(prevProps, prevState) {
     console.log('the component has updated');
@@ -49,7 +48,6 @@ class Lifecycle extends React.Component {
     event.preventDefault();
     alert(`you are signing in as ${this.state.username} with password ${this.state.password}`);
   }
-
 
   render() {
     return (

@@ -47,7 +47,6 @@ const myPrism = new Prism(2, 3, 4);
 
 myPrism.area();
 
-
 // console.log(myPrism);
 // console.log(myPrism.volume());
 // console.log(myPrism.area());
