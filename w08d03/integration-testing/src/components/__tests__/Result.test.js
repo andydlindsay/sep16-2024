@@ -26,4 +26,4 @@ test('it can show the results of an api call', () => {
 
   // find one of our hardcoded values in the DOM
   return findByText('Alice', { exact: false });
-})
+});
