@@ -1,25 +1,6 @@
 # BREAKOUT - Ruby on Rails (Migrations and Models)
 
 ### To Do
-* [ ] Updating the database with migrations
-* [ ] Generate model(s)
-* [ ] Seeding data
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [x] Updating the database with migrations
+* [x] Generate model(s)
+* [x] Seeding data
