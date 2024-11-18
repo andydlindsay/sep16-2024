@@ -1,0 +1,10 @@
+<h1>All the characters!</h1>
+
+
+<% @characters.each do |character| %>
+  <div class="character">
+    <h2>Name: <%= character.name %></h2>
+    <h2>House: <%= character.house %></h2>
+    <%= link_to 'Visit the locations', character_locations_path(character) %>
+  </div>
+<% end %>
